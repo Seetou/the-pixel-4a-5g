@@ -1,0 +1,409 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ff: "Roboto", sans-serif;
+  --primary-color: #c9ada7;
+  --primary-green-color: #93aaa2;
+  --primary-green-color-shade70: #2c3331;
+  --secondary-background-color: #181a18;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--ff);
+  letter-spacing: 0.1rem;
+  scroll-behavior: smooth;
+}
+
+.heading {
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+}
+
+.sub-heading {
+  font-size: 4rem;
+  font-weight: 700;
+  color: white;
+}
+
+header {
+  background: var(--primary-green-color-shade70);
+  padding: 2rem 0;
+}
+
+.hero-container {
+  max-width: 60%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  column-gap: 2rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.hero-img {
+  align-self: center;
+  justify-self: center;
+  text-align: center !important;
+}
+
+.hero-image-img {
+  max-width: 80%;
+  max-height: fit-content;
+  opacity: 0;
+  transform: translateX(200%);
+  transition: all 0.5s ease-out;
+}
+
+.show-hero-img {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.hero-title {
+  font-size: 5rem;
+  color: white;
+  font-weight: 900;
+}
+
+#pixel-4A5G {
+  font-size: 5rem;
+}
+
+.hero-description {
+  font-size: 2rem;
+  margin: 2rem auto;
+  color: white;
+  font-weight: 900;
+}
+
+.btn {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  background: none;
+  border: 0.2rem solid white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn.hero-btn {
+  margin-bottom: 3rem;
+  color: white;
+  font-weight: 900;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn.hero-btn:hover {
+  margin-bottom: 3rem;
+  color: var(--primary-green-color-shade70);
+  font-weight: 900;
+  background: white;
+}
+
+.colors-container {
+  margin-top: 7rem;
+}
+
+.colors {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.color {
+  height: 2rem;
+  width: 2rem;
+  margin-right: 1rem;
+  border-radius: 50%;
+  border: 0.2rem solid white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.color-selected {
+  transform: scale(1.5);
+  border: 0.2rem solid var(--primary-color);
+}
+
+.color:hover {
+  border: 0.2rem solid var(--primary-color);
+}
+
+.color.black {
+  background: black;
+}
+
+.color.white {
+  background: white;
+}
+
+.color.green {
+  background: var(--primary-green-color);
+}
+
+.colors-description {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  margin-top: 1rem;
+}
+
+/*Phone features*/
+.perf-description {
+  background-color: var(--secondary-background-color);
+  padding-top: 10rem;
+}
+
+.perf-container {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.phone-features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.phone-features article {
+  color: white;
+  text-align: center;
+  margin-top: 10rem;
+}
+
+article i {
+  font-size: 5rem;
+}
+
+.feature-text {
+  font-size: 1.5rem;
+}
+
+.top-features {
+  background-color: var(--secondary-background-color);
+  padding: 10rem 0;
+}
+
+.top-features-container {
+  display: grid;
+  column-gap: 2rem;
+  row-gap: 4rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.camera-details {
+  grid-column: 1/3;
+  grid-row: 1/3;
+  border-radius: 4rem;
+  overflow: hidden;
+  /* background: var(--primary-green-color); */
+}
+
+.camera-details > img {
+  max-width: 100%;
+}
+
+.camera-text {
+  grid-column: 3/5;
+  grid-row: 1/3;
+  align-self: center;
+}
+.camera-text-heading {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--primary-green-color);
+}
+
+.screen-details {
+  grid-column: 1/5;
+  grid-row: 4/6;
+  border-radius: 4rem;
+  text-align: center;
+  overflow: hidden;
+  /* background: var(--primary-green-color); */
+}
+
+.screen-text {
+  grid-column: 1/5;
+  grid-row: 3/4;
+  align-self: center;
+  text-align: center;
+}
+
+.screen-text-heading {
+  font-size: 4rem;
+  font-weight: 700;
+  color: white;
+}
+
+.screen-details > img {
+  max-width: 100%;
+  align-self: center;
+}
+
+.hero-colors {
+  padding: 10rem 0;
+  background: var(--primary-color);
+}
+
+.all-pixels-colors {
+  max-width: 60%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: center;
+  align-items: center;
+  transition: transform 1s, opacity 1s;
+}
+
+.fingerprint-section-hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+.all-pixels-colors-heading {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.all-text-container i {
+  font-size: 8rem;
+  background: whitesmoke;
+  border-radius: 4rem;
+  margin: 2rem 0;
+}
+
+.all-img-container {
+  max-width: 100%;
+}
+
+.hero-all-img {
+  max-width: 100%;
+}
+
+.gallery-container {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  overflow: hidden;
+}
+
+.gallery-container img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.faq {
+  background: var(--secondary-background-color);
+  padding: 10rem 0;
+}
+
+.faq-container {
+  max-width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.faq-title {
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+}
+
+.question-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.question-title h3 {
+  color: white;
+  font-size: 2rem;
+}
+
+.question-title button i {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.question-title button {
+  background: var(--secondary-background-color);
+  border: 1px solid var(--secondary-background-color);
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.question-title button:hover {
+  transform: translateX(0.5rem);
+}
+
+.question-is-active .question-text {
+  display: block;
+}
+
+.question-text {
+  font-size: 1.5rem;
+  color: white;
+  padding-top: 2rem;
+  display: none;
+}
+
+.hidden-faq-text {
+  display: none;
+}
+
+.faq-questions {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 0.1rem solid white;
+}
+
+footer {
+  max-width: 100%;
+  background: whitesmoke;
+  padding: 10rem 0;
+}
+
+.footer-container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.logo-footer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.logo-footer i {
+  font-size: 3rem;
+  font-weight: 900;
+  color: white;
+  background: var(--primary-green-color);
+  border-radius: 2rem;
+  padding: 1rem;
+  margin-right: 1rem;
+}
+
+.logo-footer p {
+  font-size: 2rem;
+}
+
+.disclaimer p {
+  font-size: 1.5rem;
+}

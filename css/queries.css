@@ -1,0 +1,134 @@
+
+@media (max-width:85em){
+    .hero-container, .perf-container, .top-features-container, .all-pixels-colors, .faq-container {
+        max-width: 80%;
+    }
+}
+
+
+
+@media (max-width:50em){
+    header {
+        padding:5rem 0;
+    }
+
+    .hero-container, .perf-container, .top-features-container, .all-pixels-colors, .faq-container {
+        max-width: 80%;
+    }
+
+
+    .hero-container {
+
+        /* display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; */
+
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+        
+        
+       
+       
+    }
+
+    .hero-image-img {
+        max-width:80%;
+        display: inline-block;
+    }
+
+    .colors-container {
+        margin-top:5rem;
+        
+    }
+
+    .colors {
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .phone-features {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        
+    }
+
+    .all-pixels-colors-heading {
+        font-size: 3rem;
+        font-weight: 700;
+      }
+    
+}
+
+@media (max-width:46em){
+
+    .top-features-container {
+        grid-template-rows: repeat(4, auto);
+    }
+
+    .camera-text {
+        grid-column:1/5;
+        grid-row: 1/2;
+        text-align: center;
+
+    }
+
+    .camera-details {
+        grid-column:1/5 ;
+        grid-row: 2/3;
+    }
+
+    .all-pixels-colors {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+        text-align: center;
+    }
+
+    .all-img-container img {
+        max-width: 80%;
+        padding-top: 2rem;
+      }
+
+
+    .faq-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+@media (max-width:31em) {
+    .hero-title {
+        font-size:2.5rem;
+    }
+
+    .perf-container h2 {
+        font-size:3rem;
+    }
+
+    .phone-features {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        align-items: center;
+        justify-items: center;
+        max-width: 80%;
+        margin:0 auto;
+    }
+
+    .camera-text-heading, .screen-text-heading {
+        font-size: 3rem;
+    }
+
+    .all-pixels-colors-heading {
+        font-size: 2rem;
+    }
+
+
+}
